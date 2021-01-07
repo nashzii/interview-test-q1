@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="col-1">
+    <input type="text" name="valNumber" id="valNumber" [(ngModel)]="valNumber" (ngModelChange)="numberChange()">
+  </div>
+  <div class="col-2">
+    <select id="type" name="type" (change)="onTypeChange($event)">
+      <option value="isPrime">isPrime</option>
+      <option value="isFibonacci">isFibonacci</option>
+    </select>
+  </div>
+  <div class="col-3">
+    {{ result }}
+  </div>
+</div>

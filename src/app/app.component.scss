@@ -1,0 +1,20 @@
+.col-1 {
+    width: 200px;
+}
+.col-2 {
+    flex-grow: 1;
+    min-width: 100px;
+}
+.col-3 {
+    width: 300px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}
